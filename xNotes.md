@@ -1,0 +1,1 @@
+I grape the timer.js from https://github.com/musicandcode/Metronome/blob/main/timer.js cause is an another tutorial: https://www.youtube.com/watch?v=x8PBWobv6NY&t=144s&ab_channel=MusicandCoding
