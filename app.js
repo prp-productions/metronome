@@ -31,7 +31,7 @@ decreaseTempoBtn.addEventListener("click", () => {
 });
 
 increaseTempoBtn.addEventListener("click", () => {
-  if (bpm > 20) {
+  if (bpm >= 280) {
     return;
   }
   bpm++;
@@ -62,18 +62,18 @@ addBeats.addEventListener("click", () => {
   measureCount.textContent = beatsPerMeasure;
 });
 
-startStopBtn.addEventListener('click', () => {
-	count = 0;
-	if(!isRunning) {
-		metronome.start();
-		isRunning = true;
-		startStopBtn.textContent = 'STOP';
-	} else {
-		metronome.stop();
-		isRunning = false;
-		startStopBtn.textContent = 'START'
-	}
-})
+startStopBtn.addEventListener("click", () => {
+  count = 0;
+  if (!isRunning) {
+    metronome.start();
+    isRunning = true;
+    startStopBtn.textContent = "STOP";
+  } else {
+    metronome.stop();
+    isRunning = false;
+    startStopBtn.textContent = "START";
+  }
+});
 
 function updateMetronome() {
   tempoDisplay.textContent = bpm;
